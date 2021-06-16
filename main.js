@@ -17400,7 +17400,7 @@ var TFProgramme = {
          if (secteur!=choix$1) {
             continue;
          }
-         html$1+=("<img src=photo.toString()+".jpg\" alt=\""+nom.toString()+"\" width=\""+w$1.toString()+"\" height=\""+h$2.toString()+"\"><\/br>");
+         html$1+=("<img src=\""+photo.toString()+".jpg\" alt=\""+nom.toString()+"\" width=\""+w$1.toString()+"\" height=\""+h$2.toString()+"\"><\/br>");
          html$1 = html$1+"<h2>"+nom+"<\/h2>";
          html$1 = html$1+"<b>"+ville+"<\/b><\/br>";
          html$1 = html$1+"<i>"+info$2+"<\/i><\/br>";

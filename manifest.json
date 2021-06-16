@@ -9,13 +9,5 @@
 	"offline_enabled" : true,
 	"permissions" : [
 		"app.window"
-	],
-	"app" : {
-		"background" : {
-			"persistent" : false,
-			"scripts" : [
-				
-			]
-		}
-	}
+	]
 }

@@ -70,7 +70,7 @@ function RightStr(s,n) { return s.substr(s.length-n) }
 function RandomInt(i) { return Math.floor(Random()*i) }
 /*
 
-Copyright (C) 2010 by Johannes Baag�e <baagoe@baagoe.org>
+Copyright (C) 2010 by Johannes Baag?e <baagoe@baagoe.org>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -17400,7 +17400,7 @@ var TFProgramme = {
          if (secteur!=choix$1) {
             continue;
          }
-         html$1+=("<img src=\"res\/"+photo.toString()+".jpg\" alt=\""+nom.toString()+"\" width=\""+w$1.toString()+"\" height=\""+h$2.toString()+"\"><\/br>");
+         html$1+=("<img src=photo.toString()+".jpg\" alt=\""+nom.toString()+"\" width=\""+w$1.toString()+"\" height=\""+h$2.toString()+"\"><\/br>");
          html$1 = html$1+"<h2>"+nom+"<\/h2>";
          html$1 = html$1+"<b>"+ville+"<\/b><\/br>";
          html$1 = html$1+"<i>"+info$2+"<\/i><\/br>";
@@ -17418,8 +17418,8 @@ var TFProgramme = {
    /// procedure TFProgramme.FProgrammeActivate(Sender: TObject)
    ///  [line: 152, column: 23, file: FProgramme]
    ,FProgrammeActivate:function(Self, Sender$13) {
-      TW3HttpRequest.Get$1(Self.FHttpProg,"\/res\/programme_utf8.txt");
-      TW3HttpRequest.Get$1(Self.FHttpListe,"\/res\/candidats_utf8.txt");
+      TW3HttpRequest.Get$1(Self.FHttpProg,"programme_utf8.txt");
+      TW3HttpRequest.Get$1(Self.FHttpListe,"candidats_utf8.txt");
       WriteLn("****");
    }
    /// procedure TFProgramme.FProgrammeResize(Sender: TObject)
@@ -17573,19 +17573,19 @@ var TFProgramme = {
       TW3MovableControl.SetHeight$(Self.lboxTheme,336);
       TW3TagContainer.SetComponentName(Self.lboxTheme,"lboxTheme");
       TW3ListBox.SetOnItemClick(Self.lboxTheme,$Event2(Self,TFProgramme.lboxThemeItemClick));
-      TW3Image.LoadFromUrl(Self.imgLogo,"res\/entete.jpg");
-      TW3Image.LoadFromUrl(Self.imgPied,"res\/pied.jpg");
-      TW3Image.LoadFromUrl(Self.imgTitre,"res\/btnVide.png");
-      TW3Image.LoadFromUrl(Self.imgProg,"res\/btnP2.png");
-      TW3Image.LoadFromUrl(Self.imgListe,"res\/btnC2.png");
-      TW3Image.LoadFromUrl(Self.imgTheme,"res\/btnT2.png");
-      TW3Image.LoadFromUrl(Self.imgVide,"res\/btnVide.png");
+      TW3Image.LoadFromUrl(Self.imgLogo,"entete.jpg");
+      TW3Image.LoadFromUrl(Self.imgPied,"pied.jpg");
+      TW3Image.LoadFromUrl(Self.imgTitre,"btnVide.png");
+      TW3Image.LoadFromUrl(Self.imgProg,"btnP2.png");
+      TW3Image.LoadFromUrl(Self.imgListe,"btnC2.png");
+      TW3Image.LoadFromUrl(Self.imgTheme,"btnT2.png");
+      TW3Image.LoadFromUrl(Self.imgVide,"btnVide.png");
       TW3MovableControl.SetTransparent(Self.lbCTM,true);
       TW3MovableControl.SetTransparent(Self.lbSecteur,true);
       TW3MovableControl.SetUseAlpha(Self.scroll$1,true);
       TW3MovableControl.SetAlpha(Self.scroll$1,85);
       Self.lbContenu = TW3TagContainer.Create$81$($New(TW3DIVHtmlElement),Self.scroll$1);
-      //TW3ControlBackground.FromURL(TW3MovableControl.GetBackGround(Self),"res\/fond_JPN2.jpg");
+      //TW3ControlBackground.FromURL(TW3MovableControl.GetBackGround(Self),"fond_JPN2.jpg");
       TW3ControlBackgroundSize.SetMode(TW3MovableControl.GetBackGround(Self).FSize$2,4);
       TW3MovableControl.SetVisible(Self.lbSecteur,false);
       TW3MovableControl.SetVisible(Self.cbSecteur,false);

@@ -17585,7 +17585,7 @@ var TFProgramme = {
       TW3MovableControl.SetUseAlpha(Self.scroll$1,true);
       TW3MovableControl.SetAlpha(Self.scroll$1,85);
       Self.lbContenu = TW3TagContainer.Create$81$($New(TW3DIVHtmlElement),Self.scroll$1);
-      TW3ControlBackground.FromURL(TW3MovableControl.GetBackGround(Self),"res\/fond_JPN2.jpg");
+      //TW3ControlBackground.FromURL(TW3MovableControl.GetBackGround(Self),"res\/fond_JPN2.jpg");
       TW3ControlBackgroundSize.SetMode(TW3MovableControl.GetBackGround(Self).FSize$2,4);
       TW3MovableControl.SetVisible(Self.lbSecteur,false);
       TW3MovableControl.SetVisible(Self.cbSecteur,false);

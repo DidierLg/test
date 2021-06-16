@@ -1,0 +1,21 @@
+{
+	"manifest_version" : 2,
+	"name" : "Ansanm",
+	"version" : "0.0.0",
+	"description" : "",
+	"author" : "",
+	"short_name" : "Ansanm",
+	"icons" : { },
+	"offline_enabled" : true,
+	"permissions" : [
+		"app.window"
+	],
+	"app" : {
+		"background" : {
+			"persistent" : false,
+			"scripts" : [
+				"background.js"
+			]
+		}
+	}
+}
